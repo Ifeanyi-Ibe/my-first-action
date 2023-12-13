@@ -24,7 +24,7 @@ jobs:
       - name: Print welcome
         run: "Get-ChildItem Env: | Sort-Object Name"
 
-  job1:
+  job3:
     name: Third Job
     runs_on: macos-latest
     steps:
@@ -32,7 +32,7 @@ jobs:
         run: echo "Welcome to my world!"
 
 
-  job1:
+  job4:
     name: Last Job
     runs_on: ubuntu-latest
     needs: [job1, job2, job3]
